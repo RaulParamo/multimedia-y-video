@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Multimedia y Video con HTML
+            </title>
+        </meta>
+    </head>
+    <body>
+        <fieldset>
+            <legend>
+                sin compatibilidad
+            </legend>
+            <h2>
+                Videos para HTML5
+            </h2>
+            <video controls="" poster="C:\Users\Jimena Radillo\Documents\Udemy HTML\imagenes/poster.jpg" src="C:\Users\Jimena Radillo\Documents\Udemy HTML\video/codigo.ogv " width="300">
+            </video>
+            <!--el atributo "controls" es para agrgsrle un reproductor al video-->
+            <h2>
+                Videos para HTML5
+            </h2>
+            <video controls="" src="C:\Users\Jimena Radillo\Documents\Udemy HTML\video/codigo.mp4 " width="300">
+            </video>
+            <h2>
+                Videos para HTML5
+            </h2>
+            <video controls="" src="C:\Users\Jimena Radillo\Documents\Udemy HTML\video/codigo.webm " width="300">
+            </video>
+        </fieldset>
+        <br>
+            <br>
+                <fieldset>
+                    <legend>
+                        Sin compatibilidad
+                    </legend>
+                    <h2>
+                        Audio para HTML5
+                    </h2>
+                    <video controls="" src="C:\Users\Jimena Radillo\Documents\Udemy HTML\audio/audio.oga " width="300">
+                    </video>
+                    <h2>
+                        Audio para HTML5
+                    </h2>
+                    <video controls=""  loop src="C:\Users\Jimena Radillo\Documents\Udemy HTML\audio/audio.m4a " width="300">
+                    </video>
+                </fieldset>
+                <br>
+                    <br>
+                        <!--Para cargar distintas versiones para mayor compatibilidad ese debe ser el orden para que s epuedan leer-->
+                        <h2>
+                            Videos para HTML5
+                        </h2>
+                        <video controls="" poster="C:\Users\Jimena Radillo\Documents\Udemy HTML\imagenes/poster.jpg" preload="metadata" width="300">
+                            <!--preload: auto, metadata, none   poster espara cargar una imagen dentro del video pero en preload debe llevar "metadata"-->
+                            <source src="C:\Users\Jimena Radillo\Documents\Udemy HTML\video/codigo.mp4" type="video/mp4">
+                                <h2>
+                                    Videos para HTML5
+                                </h2>
+                                <source src="C:\Users\Jimena Radillo\Documents\Udemy HTML\video/codigo.mp4" type="video/webm">
+                                    <h2>
+                                        Videos para HTML5
+                                    </h2>
+                                    <source src="C:\Users\Jimena Radillo\Documents\Udemy HTML\video/codigo.ogv" type="video/ogg">
+                                    </source>
+                                </source>
+                            </source>
+                        </video>
+                        <h2>
+                            Audio para HTML5
+                        </h2>
+                        <audio controls="" preload="none"  loop widt="300"><!--loop para repetir el audio autoamticamente-->
+                            <!--preload: auto, metadata, none-->
+                            <source src="C:\Users\Jimena Radillo\Documents\Udemy HTML\audio/audio.m4a" type="audio/mp4">
+                                <source src="C:\Users\Jimena Radillo\Documents\Udemy HTML\audio/audio.oga " type="audio/ogg">
+                                </source>
+                            </source>
+                        </audio>
+                    </br>
+                </br>
+            </br>
+        </br>
+        <h2>
+            Videos con autoplay para HTML5
+            <!--las tabletas y celulares no soportan el auto play-->
+        </h2>
+        <video autoplay="" controls="" muted=""  loop poster="C:\Users\Jimena Radillo\Documents\Udemy HTML\imagenes/poster.jpg" preload="metadata" width="300"  ><!--loop es para repeir automaticamnete el video y tambien sirve para un audio-->
+            <!--en chrome no funciona el autoplay a menos que le agreguemos el atribut "muted"--><!--preload: auto, metadata, none   poster espara cargar una imagen dentro del video pero en preload debe llevar "metadata"-->
+            <source src="C:\Users\Jimena Radillo\Documents\Udemy HTML\video/codigo.mp4" type="video/mp4">
+                <h2>
+                    Videos para HTML5
+                </h2>
+                <source src="C:\Users\Jimena Radillo\Documents\Udemy HTML\video/codigo.mp4" type="video/webm">
+                    <h2>
+                        Videos para HTML5
+                    </h2>
+                    <source src="C:\Users\Jimena Radillo\Documents\Udemy HTML\video/codigo.ogv" type="video/ogg">
+                    </source>
+                </source>
+            </source>
+        </video>
+    </body>
+</html>
